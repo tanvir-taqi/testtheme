@@ -22,3 +22,20 @@ wp_enqueue_style("custom");
     wp_enqueue_script("main", get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true);
 }
 add_action("wp_enqueue_scripts","css_js_file_calling");
+
+function logo_customizer_register($wp_customize) {
+    $wp_customize->add_section("header_area", array(
+        "title"=> __("Header Area","test-theme"),
+        "description"=>"Update Header",
+    ) );
+    $wp_customize->add_setting("logo", array(
+        "default"=> get_bloginfo('template_directory') . './img/logo.jpg',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'logo', array(
+        'label'=> 'Logo Upload',
+        "description"=>"Update your logo here",
+        'setting' => 'logo',
+        'section' => 'header_area',
+    )) );
+};
+add_action( 'customize_register', 'logo_customizer_register' );

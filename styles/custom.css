@@ -1,0 +1,17 @@
+/* 
+Common styles
+*/
+
+img{
+    max-width: 150px;
+ 
+}
+
+
+/* ==========================
+Header Area
+==========================*/
+#header_area{
+    padding: 5px 5px;
+    background: #ececec;
+}
