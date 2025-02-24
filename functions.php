@@ -29,7 +29,7 @@ function logo_customizer_register($wp_customize) {
         "description"=>"Update Header",
     ) );
     $wp_customize->add_setting("logo", array(
-        "default"=> get_bloginfo('template_directory') . './img/logo.jpg',
+        "default"=> get_bloginfo('template_directory') . './img/logo.png',
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'logo', array(
         'label'=> 'Logo Upload',
@@ -39,3 +39,9 @@ function logo_customizer_register($wp_customize) {
     )) );
 };
 add_action( 'customize_register', 'logo_customizer_register' );
+
+// =============== 
+// nav menu register 
+// ================
+
+register_nav_menu('primary',__('Main Menu', 'test-theme')) ;

@@ -1,17 +1,246 @@
 /* 
+
+Here’s a **detailed guide** for your **minimal, clean, and premium** real estate website with specific fonts, colors, and sizes for various elements:
+
+---
+
+### **🎨 Color Palette & Usage**
+
+1. **Primary Colors:**
+   - **Navy Blue `#1E3A8A`**: Used for:
+     - Primary buttons
+     - Important text (like headings)
+     - Menu items and links
+   - **Gold `#D4AF37`**: Used for:
+     - Button hover state
+     - Menu hover state
+     - Accents (like icons or special highlights)
+   - **Dark Gray `#333333`**: Used for:
+     - Primary text (body content, descriptions, etc.)
+
+2. **Neutral Colors:**
+   - **Soft Light Gray `#F8F9FA`**: Used for:
+     - Main background color of the website
+     - Section backgrounds
+     - Card backgrounds (for featured listings)
+   - **Pure White `#FFFFFF`**: Used for:
+     - Header background
+     - Navigation bar background
+     - Background for light sections or cards
+
+---
+
+### **📝 Typography Guide**
+
+1. **Body Text (Paragraphs)**
+   - **Font Family**: `Helvetica Neue`, sans-serif (modern, clean look)
+   - **Font Size**: `16px` (comfortable readability)
+   - **Font Weight**: `400` (normal weight)
+   - **Line Height**: `1.5` (for good readability)
+   - **Color**: `#333333` (Dark gray for better contrast)
+
+2. **Headings (H1 to H6)**
+   - **H1:**
+     - **Font Size**: `36px` (large, eye-catching)
+     - **Font Weight**: `700` (bold)
+     - **Color**: `#1E3A8A` (Navy blue for trust and professionalism)
+   - **H2:**
+     - **Font Size**: `30px`  
+     - **Font Weight**: `600`  
+     - **Color**: `#1E3A8A`
+   - **H3:**
+     - **Font Size**: `24px`
+     - **Font Weight**: `600`
+     - **Color**: `#333333` (Dark gray for subheadings)
+   - **H4:**
+     - **Font Size**: `20px`
+     - **Font Weight**: `600`
+     - **Color**: `#333333`
+   - **H5:**
+     - **Font Size**: `18px`
+     - **Font Weight**: `500`
+     - **Color**: `#333333`
+   - **H6:**
+     - **Font Size**: `16px`
+     - **Font Weight**: `400`
+     - **Color**: `#333333`
+
+3. **Menu Items (Navigation)**
+   - **Font Family**: `"Cantata One", serif` (Elegant, premium feel)
+   - **Font Size**: `14px` (suitable for menu navigation)
+   - **Font Weight**: `600` (elegant but not too heavy)
+   - **Color**: `#1E3A8A` (Navy blue for consistency)
+   - **Menu Hover Color**: `#D4AF37` (Gold for premium interaction)
+
+4. **Buttons**
+   - **Primary Button**:
+     - **Font Size**: `16px`
+     - **Font Weight**: `600`
+     - **Padding**: `12px 30px` (adequate padding for easy clicking)
+     - **Background Color**: `#1E3A8A` (Navy blue)
+     - **Color**: `#FFFFFF` (White text for contrast)
+   - **Button Hover**:
+     - **Background Color**: `#D4AF37` (Gold to stand out)
+
+5. **Links**
+   - **Font Size**: `16px`
+   - **Font Weight**: `400` (lighter to differentiate from headings)
+   - **Color**: `#1E3A8A` (consistent with the primary theme)
+   - **Hover Color**: `#D4AF37` (Gold for highlighting)
+
+---
+
+### **📏 Spacing & Layout**
+
+1. **Line Height**:
+   - **Body Text**: `1.5` (for readability)
+   - **Headings**: `1.2` (to create more space and make headings stand out)
+
+2. **Margins & Padding**:
+   - **Top Section Margin**: `50px` (spacious top margin for the header)
+   - **Section Padding**: `40px` (enough space between sections to avoid clutter)
+   - **Button Padding**: `12px 30px` (comfortable size for clicking)
+
+---
+
+### **📐 Button Sizes**
+
+1. **Primary Button**:
+   - **Height**: `45px`
+   - **Width**: `auto` (responsive, width adjusts to text)
+   - **Font Size**: `16px`
+   - **Padding**: `12px 30px`
+
+2. **Secondary Button**:
+   - **Height**: `40px`
+   - **Width**: `auto`
+   - **Font Size**: `14px`
+   - **Padding**: `10px 25px`
+
+---
+
+### **🖥️ Layout and Spacing Recommendations**
+
+1. **Overall Width of Content**:
+   - **Container Width**: `1200px` (to ensure the website doesn't feel too stretched on larger screens)
+   - **Content Padding**: `20px` on mobile for better readability
+   - **Maximum Container Width for Desktop**: `1200px`
+
+2. **Header Height**:
+   - **Height**: `70px` (enough space for a logo and navigation links)
+
+---
+
+
+This keeps it **minimal yet high-end**, focusing on professionalism and trustworthiness. Let me know if you want slight tweaks! 🚀*/
+
+
+
+/* 
 Common styles
 */
 
 img{
-    max-width: 150px;
+    height: 60px;
+    max-width: 200px;
+    
  
 }
-
+body{
+    background: #F8F9FA;
+}
 
 /* ==========================
 Header Area
+
+logo color :  #5b8927 ||  #D4AF37
 ==========================*/
 #header_area{
-    padding: 5px 5px;
-    background: #ececec;
+    padding: 10px 10px;
+    background: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+    color: #1E3A8A;
 }
+
+#header_area .col-md-9 ul {
+   
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+  #header_area .col-md-9 ul li {
+    display: inline-block;
+    position: relative;
+  }
+  #header_area .col-md-9 ul li a {
+    color: #1E3A8A;
+    padding: 20px 10px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #header_area .col-md-9 ul li a:hover {
+    /* background: #ea1a70; */
+    color: #D4AF37;
+  }
+  
+  /*Dropdown Menu*/
+  #header_area .col-md-9 ul li ul {
+    background: #fff none repeat scroll 0 0;
+    left: -99999px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 50px;
+    width: 200px;
+  }
+  #header_area .col-md-9 ul li:hover ul {
+    left: 0px;
+  }
+  #header_area .col-md-9 ul li ul li {
+    display: block;
+  }
+  #header_area .col-md-9 ul li ul li a {
+    color: #1E3A8A;
+    padding: 8px 10px;
+  }
+  #header_area .col-md-9 ul li ul li a:hover {
+    /* background: #ddd; */
+    color: #D4AF37;
+  }
+  #header_area .col-md-9 ul li:hover a {
+    /* background: #ea1a70; */
+    color: #D4AF37;
+  }
+  #header_area .col-md-9 ul li:hover ul li a {
+    background: none;
+    color: #1E3A8A;
+  }
+  
+  /*Sub Dropdown Menu*/
+  #header_area .col-md-9 ul li ul ul {
+    left: -99999px;
+    top: 0;
+    position: absolute;
+  }
+  #header_area .col-md-9 ul li:hover ul li ul {
+    left: -999999px;
+  }
+  #header_area .col-md-9 ul li ul li:hover ul {
+    left: 200px;
+  }
+  #header_area .col-md-9 ul li ul li:hover a {
+    /* background: #ea1a70; */
+    color: #D4AF37;
+  }
+  #header_area .col-md-9 ul ul li:hover ul li a {
+    /* background: #262626; */
+    color: #1E3A8A;
+  }
+  #header_area .col-md-9 ul ul li ul li a:hover {
+    /* background: #ea1a70; */
+    color: #D4AF37;
+  }
