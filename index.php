@@ -17,14 +17,21 @@
 
 <body <?php body_class() ?>>
 
+
+
+<!-- =========== 
+Header content 
+============= -->
+
+
     <div id="header_area" class="<?php echo get_theme_mod('header_menu_position'); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href=""> <img src=" <?php echo get_theme_mod('logo'); ?>" alt=""></a>
+                    <a href="<?php echo home_url(); ?>"> <img src=" <?php echo get_theme_mod('logo'); ?>" alt=""></a>
                 </div>
                 <div class="col-md-9">
-                    <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_id'=>'nav'))?>
+                    <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'nav')) ?>
                     <!-- <ul id="nav">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
@@ -61,11 +68,24 @@
 
                     </ul> -->
 
-                </di>
+                </div>
             </div>
         </div>
     </div>
 
+<!-- =========== 
+body content 
+============= -->
+
+    <section id="body_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php the_content() ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <?php wp_footer() ?>
