@@ -134,20 +134,16 @@ Here’s a **detailed guide** for your **minimal, clean, and premium** real esta
 
 This keeps it **minimal yet high-end**, focusing on professionalism and trustworthiness. Let me know if you want slight tweaks! 🚀*/
 
-
-
 /* 
 Common styles
 */
 
-img{
-    height: 60px;
-    max-width: 200px;
-    
- 
+img {
+  height: 60px;
+  max-width: 200px;
 }
-body{
-    background: #F8F9FA;
+body {
+  background: #f8f9fa;
 }
 
 /* ==========================
@@ -155,92 +151,118 @@ Header Area
 
 logo color :  #5b8927 ||  #D4AF37
 ==========================*/
-#header_area{
-    padding: 10px 10px;
-    background: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: "Lora", serif;
-    color: #1E3A8A;
+#header_area {
+  padding: 10px 10px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  color: #1e3a8a;
 }
 
 #header_area .col-md-9 ul {
-   
-    margin: 10px 0 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
-  }
-  #header_area .col-md-9 ul li {
-    display: inline-block;
-    position: relative;
-  }
-  #header_area .col-md-9 ul li a {
-    color: #1E3A8A;
-    padding: 20px 10px;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  #header_area .col-md-9 ul li a:hover {
-    /* background: #ea1a70; */
-    color: #D4AF37;
-  }
-  
-  /*Dropdown Menu*/
-  #header_area .col-md-9 ul li ul {
-    background: #fff none repeat scroll 0 0;
-    left: -99999px;
-    margin: 0;
-    position: absolute;
-    text-align: left;
-    top: 50px;
-    width: 200px;
-  }
-  #header_area .col-md-9 ul li:hover ul {
-    left: 0px;
-  }
-  #header_area .col-md-9 ul li ul li {
-    display: block;
-  }
-  #header_area .col-md-9 ul li ul li a {
-    color: #1E3A8A;
-    padding: 8px 10px;
-  }
-  #header_area .col-md-9 ul li ul li a:hover {
-    /* background: #ddd; */
-    color: #D4AF37;
-  }
-  #header_area .col-md-9 ul li:hover a {
-    /* background: #ea1a70; */
-    color: #D4AF37;
-  }
-  #header_area .col-md-9 ul li:hover ul li a {
-    background: none;
-    color: #1E3A8A;
-  }
-  
-  /*Sub Dropdown Menu*/
-  #header_area .col-md-9 ul li ul ul {
-    left: -99999px;
-    top: 0;
-    position: absolute;
-  }
-  #header_area .col-md-9 ul li:hover ul li ul {
-    left: -999999px;
-  }
-  #header_area .col-md-9 ul li ul li:hover ul {
-    left: 200px;
-  }
-  #header_area .col-md-9 ul li ul li:hover a {
-    /* background: #ea1a70; */
-    color: #D4AF37;
-  }
-  #header_area .col-md-9 ul ul li:hover ul li a {
-    /* background: #262626; */
-    color: #1E3A8A;
-  }
-  #header_area .col-md-9 ul ul li ul li a:hover {
-    /* background: #ea1a70; */
-    color: #D4AF37;
-  }
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+#header_area .col-md-9 ul li {
+  display: inline-block;
+  position: relative;
+}
+#header_area .col-md-9 ul li a {
+  color: #1e3a8a;
+  padding: 20px 10px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header_area .col-md-9 ul li a:hover {
+  /* background: #ea1a70; */
+  color: #d4af37;
+}
+
+/*Dropdown Menu*/
+#header_area .col-md-9 ul li ul {
+  background: #fff none repeat scroll 0 0;
+  left: -99999px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  width: 200px;
+}
+#header_area .col-md-9 ul li:hover ul {
+  left: 0px;
+}
+#header_area .col-md-9 ul li ul li {
+  display: block;
+}
+#header_area .col-md-9 ul li ul li a {
+  color: #1e3a8a;
+  padding: 8px 10px;
+}
+#header_area .col-md-9 ul li ul li a:hover {
+  /* background: #ddd; */
+  color: #d4af37;
+}
+#header_area .col-md-9 ul li:hover a {
+  /* background: #ea1a70; */
+  color: #d4af37;
+}
+#header_area .col-md-9 ul li:hover ul li a {
+  background: none;
+  color: #1e3a8a;
+}
+
+/*Sub Dropdown Menu*/
+#header_area .col-md-9 ul li ul ul {
+  left: -99999px;
+  top: 0;
+  position: absolute;
+}
+#header_area .col-md-9 ul li:hover ul li ul {
+  left: -999999px;
+}
+#header_area .col-md-9 ul li ul li:hover ul {
+  left: 200px;
+}
+#header_area .col-md-9 ul li ul li:hover a {
+  /* background: #ea1a70; */
+  color: #d4af37;
+}
+#header_area .col-md-9 ul ul li:hover ul li a {
+  /* background: #262626; */
+  color: #1e3a8a;
+}
+#header_area .col-md-9 ul ul li ul li a:hover {
+  /* background: #ea1a70; */
+  color: #d4af37;
+}
+
+/* ================
+  menu position
+  ================= */
+#header_area.left_menu .col-md-3 {
+  order: 2;
+}
+#header_area.left_menu .col-md-9 {
+  order: 1;
+}
+#header_area.left_menu .col-md-9 ul {
+  text-align:left;
+}
+
+#header_area.center_menu .col-md-3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#header_area.center_menu .col-md-9 {
+  justify-content: center;
+  width: 100%;
+}
+#header_area.center_menu .col-md-9 ul {
+  text-align:center;
+}
+

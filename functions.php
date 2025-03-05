@@ -23,7 +23,16 @@ wp_enqueue_style("custom");
 }
 add_action("wp_enqueue_scripts","css_js_file_calling");
 
+// google font enqueue
+
+function add_google_font(){
+    wp_enqueue_style('google_font','https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap', false);
+};
+add_action("wp_enqueue_scripts","add_google_font");
+
+// theme functions
 function logo_customizer_register($wp_customize) {
+    // header area
     $wp_customize->add_section("header_area", array(
         "title"=> __("Header Area","test-theme"),
         "description"=>"Update Header",
@@ -37,6 +46,27 @@ function logo_customizer_register($wp_customize) {
         'setting' => 'logo',
         'section' => 'header_area',
     )) );
+    // menu position
+    $wp_customize->add_section("menu_option", array(
+        "title"=> __("Menu Position Option","test-theme"),
+        "description"=>"Update menu position",
+    ) );
+    $wp_customize->add_setting("header_menu_position", array(
+        "default"=>'Right Menu',
+    ) );
+    $wp_customize->add_control('header_menu_position', array(
+        'label' => 'Menu Position',
+        "description"=>"Select Your Menu Position",
+        'setting' => 'header_menu_position',
+        'section' => 'menu_option',
+        'type' => 'radio',
+        'choices'=> array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu',
+        ),
+    ));
+    
 };
 add_action( 'customize_register', 'logo_customizer_register' );
 

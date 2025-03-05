@@ -12,20 +12,20 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <?php wp_head() ?>
 </head>
 
 <body <?php body_class() ?>>
 
-    <div id="header_area">
+    <div id="header_area" class="<?php echo get_theme_mod('header_menu_position'); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <a href=""> <img src=" <?php echo get_theme_mod('logo'); ?>" alt=""></a>
                 </div>
                 <div class="col-md-9">
-                    <ul id="nav">
+                    <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_id'=>'nav'))?>
+                    <!-- <ul id="nav">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Properties</a>
@@ -59,9 +59,9 @@
                         <li><a href="">Blogs</a></li>
                         <li><a href="">Contact Us</a></li>
 
-                    </ul>
+                    </ul> -->
 
-                </div>
+                </di>
             </div>
         </div>
     </div>
