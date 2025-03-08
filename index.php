@@ -1,94 +1,35 @@
 <?php
-// Header Section
-?>
+/*
+* The main template file
+*/ 
+get_header(); ?>
 
+  <section id="body_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <?php if (have_posts()) :
+              while (have_posts()) : the_post(); ?>
 
-<!DOCTYPE html>
-<html lang="<?php language_attributes() ?>" class="no-js">
+              <div class="blog_area">
+                  <div class="post_thumb">
+                    <a href="<?php the_permalink(); ?>"><?php echo the_post_thumbnail('post-thumbnails'); ?></a>
+                  </div>
+                  <div class="post_details">
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <?php the_excerpt(); ?>
+                  </div>
+              </div>
+          <?php endwhile;
+            else :
+              _e('No post found');
+            endif; ?>
 
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <?php wp_head() ?>
-</head>
-
-<body <?php body_class() ?>>
-
-
-
-<!-- =========== 
-Header content 
-============= -->
-
-
-    <div id="header_area" class="<?php echo get_theme_mod('header_menu_position'); ?>">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="<?php echo home_url(); ?>"> <img src=" <?php echo get_theme_mod('logo'); ?>" alt=""></a>
-                </div>
-                <div class="col-md-9">
-                    <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'nav')) ?>
-                    <!-- <ul id="nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Properties</a>
-                            <ul>
-                                <li><a href="">House</a>
-                                    <ul>
-                                        <li><a href="">Apartment</a></li>
-                                        <li><a href="">Cottage</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="">Land</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="">Services</a>
-                            <ul>
-                                <li><a href="">Buying</a></li>
-                                <li><a href="">Selling</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="">Renting</a>
-                            <ul>
-                                <li><a href="">Long Term</a></li>
-                                <li><a href="">Short Term</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="">FAQs</a></li>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Contact Us</a></li>
-
-                    </ul> -->
-
-                </div>
-            </div>
+          
         </div>
+        
+      </div>
     </div>
+  </section>
 
-<!-- =========== 
-body content 
-============= -->
-
-    <section id="body_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php the_content() ?>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <?php wp_footer() ?>
-</body>
-
-</html>
+  <?php get_footer(); ?>

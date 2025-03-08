@@ -158,7 +158,7 @@ logo color :  #5b8927 ||  #D4AF37
   font-weight: 600;
   font-family: "Lora", serif;
   color: #1e3a8a;
-  z-index: 999;
+ 
 }
 
 #header_area .col-md-9 ul {
@@ -199,6 +199,7 @@ logo color :  #5b8927 ||  #D4AF37
   text-align: left;
   top: 50px;
   width: 200px;
+  z-index: 999;
 }
 #header_area .col-md-9 ul li:hover ul {
   left: 0px;
@@ -277,3 +278,65 @@ logo color :  #5b8927 ||  #D4AF37
   text-align:left;
 }
 
+
+/*=======================================
+ Index Page Style
+========================================*/
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+}
+#body_area .post_thumb:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-weight: 500;
+  font-size: 30px;
+  
+}
+#body_area .post_details h2 a {
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details h2 a:hover {
+  color: #d4af37;
+}
+
+/* ================
+ footer copright area
+ ==============
+ */
+ #copyright_area p {
+  font-size: 12px;
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 2px;
+ 
+ }
+ #copyright_area p a{
+ 
+  text-decoration: underline;
+ 
+ }
+ #copyright_area p a:hover{
+  color: #d4af37;
+ }
